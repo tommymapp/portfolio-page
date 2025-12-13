@@ -18,6 +18,10 @@ const links = [
     {
         label: 'CV',
         route: '/cv.pdf'
+    },
+    {
+        label: 'Contact',
+        route: '/contact'
     }
 ]
 
