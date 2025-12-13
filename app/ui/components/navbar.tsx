@@ -58,7 +58,7 @@ export default function Navbar() {
         {/* Content */}
         <nav className="p-m flex flex-col gap-s">
            {links.map(({label, route } : {label: string, route: string}) => 
-                <Link key={route} href={route} className={`${pathname == route ? 'font-bold text-accent' : ''}`}>{label}</Link>
+                <Link onClick={() => setOpen(false)} key={route} href={route} className={`${pathname == route ? 'font-bold text-accent' : ''}`}>{label}</Link>
             )}
         </nav>
       </aside>
