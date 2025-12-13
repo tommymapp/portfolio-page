@@ -16,12 +16,12 @@ const links = [
         route: '/'
     },
     {
-        label: 'CV',
-        route: '/cv.pdf'
-    },
-    {
         label: 'Contact',
         route: '/contact'
+    },
+    {
+        label: 'CV',
+        route: '/cv.pdf'
     }
 ]
 
