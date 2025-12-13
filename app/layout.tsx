@@ -8,6 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Welcome :)</title>
+      </head>
       <body
         className={`antialiased relative`}
       >
