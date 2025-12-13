@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         
         <div className="flex gap-s">
-          <Button text="Contact me" onClick={() => window.open('')} type="primary" />
+          <Button text="Contact me" link='/contact' type="primary" />
           <Button text="View CV" onClick={() => window.open('/cv.pdf')} classes='' type="secondary"/>
         </div>
     </section>
