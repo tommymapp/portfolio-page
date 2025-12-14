@@ -35,7 +35,7 @@ export default function Navbar() {
 
     return <>
         {/* Menu button */}
-        <button className='absolute top-xs left-xs  cursor-pointer' onClick={() => setOpen(true)} aria-label="Open main menu" aria-expanded={open}>
+        <button className='fixed top-xs left-xs  cursor-pointer' onClick={() => setOpen(true)} aria-label="Open main menu" aria-expanded={open}>
           <Bars3Icon  className="w-m h-m"/>
         </button>
     

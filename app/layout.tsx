@@ -23,14 +23,14 @@ export default function RootLayout({
       <body
         className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out`}
       >
-        <div className="absolute right-xs top-5">
+        <div className="fixed right-xs top-5">
           <LightDarkToggle />
         </div>
         <Navbar />
 
         <main className="flex flex-col items-center justify-center w-screen p-s max-w-[720px]">{children}</main>
         <div 
-          className="absolute h-screen w-full overflow-hidden bg-secondary/50 flex items-center justify-center top-50 pointer-events-none"
+          className="fixed h-screen w-full overflow-hidden bg-secondary/50 flex items-center justify-center top-50 pointer-events-none"
           aria-hidden="true"
           >
             <div className="sheet sheet-1" />
