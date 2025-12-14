@@ -41,6 +41,7 @@ export default function FloatingAction() {
         fixed -right-s mr-l bottom-s
         cursor-pointer
         animate-bob
+        z-50
       "
     >
       <ArrowDownIcon
