@@ -26,7 +26,7 @@ export default function Page() {
     }
 
     return (
-        <form className="flex flex-col gap-2xs w-full h-screen" aria-label="Contact form">
+        <form className="flex flex-col gap-2xs w-full h-screen justify-center" aria-label="Contact form">
             <div className="flex flex-col gap-3xs">
                 <label htmlFor="name" className="text-sm/6 font-semibold">
                     Name
