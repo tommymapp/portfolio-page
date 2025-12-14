@@ -71,9 +71,9 @@ export default function Navbar() {
         
 
         {/* Content */}
-        <nav className="p-m flex flex-col gap-s">
+        <nav className="p-m flex flex-col gap-s mt-xs">
            {links.map(({label, route, ariaLabel } : {label: string, route: string, ariaLabel: string}) => 
-                <Link onClick={() => setOpen(false)} key={route} href={route} className={`${pathname == route ? 'font-bold text-accent' : ''}`} aria-label={ariaLabel}>{label}</Link>
+                <Link onClick={() => setOpen(false)} key={route} href={route} className={`hover:bg-accent/20 p-3xs rounded-md ${pathname == route ? 'font-bold text-accent' : ''}`} aria-label={ariaLabel}>{label}</Link>
             )}
         </nav>
       </aside>
