@@ -5,7 +5,6 @@ import IconLink from "./components/iconLink"
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-
 export default function Hero() {
   return (
     <section className="flex flex-col items-start gap-m">
@@ -20,7 +19,6 @@ export default function Hero() {
         
         <div className="flex gap-s">
           <Button text="Contact me" link='/contact' type="primary" />
-          <Button text="View CV" onClick={() => window.open('/cv.pdf')} classes='' type="secondary"/>
         </div>
     </section>
   )
