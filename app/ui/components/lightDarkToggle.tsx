@@ -36,7 +36,7 @@ export default function LightDarkToggle() {
         name="theme"
         type="checkbox"
         aria-label="Toggle theme"
-        className="absolute inset-0 appearance-none focus:outline-hidden"
+        className="absolute inset-0 appearance-none focus:outline-hidden cursor-pointer"
         onChange={onInputChange}
       />
     </div>
