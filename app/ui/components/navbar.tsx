@@ -21,12 +21,12 @@ const links = [
         label: 'Contact',
         route: '/contact',
         ariaLabel: 'Contact page'
+    },
+    {
+        label: 'CV',
+        route: '/cv.pdf',
+        ariaLabel: 'View CV'
     }
-    // {
-    //     label: 'CV',
-    //     route: '/cv.pdf',
-    //     ariaLabel: 'View CV'
-    // }
 ]
 
 export default function Navbar() {
