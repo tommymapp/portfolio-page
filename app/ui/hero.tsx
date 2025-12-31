@@ -15,7 +15,10 @@ export default function Hero() {
             <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75' ariaLabel="Go to Tommy's LinkedIn page" />
             <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75' ariaLabel="Go to Tommy's GitHub page"/>
           </div>
-          <Button text="Contact me" link='/contact' variant="primary" ariaLabel="Go to Contact me page" classes="mt-s"/>
+          <div className="flex gap-4 mt-s">
+            <Button text="Contact me" link='/contact' variant="primary" ariaLabel="Go to Contact me page"/>
+            <Button text="View CV" link='/cv.pdf' variant="secondary" ariaLabel="Go to Contact me page"/>
+          </div>
           <FloatingAction />
     </section>
   )
