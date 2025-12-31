@@ -1,29 +1,117 @@
 import Hero from "./ui/hero"
-import ProjectCard from "./ui/components/projectCard"
-
-const projects = [
-  {
-    imageUrl: '/dnd_cafe.png',
-    title: 'DnD Cafe',
-    description: 'A design piece for an imaginary DnD cafe offering board games, retro games and coffee.',
-    link: 'https://www.cafe.tommymapp.dev',
-    category: 'Design'
-  }
-]
+import Link from "next/link"
 
 export default function Home() {
   return (
     <>
       <Hero/>
-      <section className="flex flex-col" id="projects">
+      {/* <section className="flex flex-col" id="projects">
         <h2 className="font-semibold">Projects</h2>
         <p className="">Notable personal projects</p>
         <div className="border-b-1 my-l"></div>
         {projects.map((p) => 
           <ProjectCard key={p.title} imageUrl={p.imageUrl} title={p.title} description={p.description} link={p.link} category={p.category} />
         )}
+      </section> */}
+
+      <section className="">
+        <h2 >Personal projects</h2>
+        <p className="opacity-50 mt-2">A full-stack developer with strong interest in AWS who loves building and learning cool stuff. I'm based in Bristol - you can find more about me below :)</p>  
+
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+          <Link href="www.cafe.tommymapp.dev" className="relative lg:col-span-3">
+            <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
+              <img
+                alt=""
+                src="/dnd_cafe.png"
+                className="h-80 object-cover"
+              />
+              <div className="p-10 pt-4">
+                <h3 className="text-sm/4 font-semibold text-accent">DnD Cafe</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">NextJS sandbox</p>
+                <p className="mt-2 max-w-lg text-sm/6 opacity-50">
+                  An imaginary single-page marketing site for DnD Cafe to practice NextJS.
+                </p>
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
+          </Link>
+          <div className="relative lg:col-span-3">
+            <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-tr-4xl" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
+              <img
+                alt=""
+                src="/"
+                className="h-80 object-cover object-left lg:object-right"
+              />
+              <div className="p-10 pt-4">
+                <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 max-w-lg text-sm/6 opacity-50">
+                  TBD               
+                </p>
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-tr-4xl" />
+          </div>
+          <div className="relative lg:col-span-2">
+            <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-bl-4xl" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
+              <img
+                alt=""
+                src="/"
+                className="h-80 object-cover object-left"
+              />
+              <div className="p-10 pt-4">
+                <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 max-w-lg text-sm/6 opacity-50">
+                  TBD
+                </p>
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-bl-4xl" />
+          </div>
+          <div className="relative lg:col-span-2">
+            <div className="absolute inset-0 rounded-lg bg-secondary-500/5" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+              <img
+                alt=""
+                src="/"
+                className="h-80 object-cover"
+              />
+              <div className="p-10 pt-4">
+                <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 max-w-lg text-sm/6 opacity-50">
+                  TBD
+                </p>
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15" />
+          </div>
+          <div className="relative lg:col-span-2">
+            <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+              <img
+                alt=""
+                src="/"
+                className="h-80 object-cover"
+              />
+              <div className="p-10 pt-4">
+                <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 max-w-lg text-sm/6 opacity-50">
+                  TBD
+                </p>
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
+          </div>
+        </div>
       </section>
-      
+        
     </>
     
   )
