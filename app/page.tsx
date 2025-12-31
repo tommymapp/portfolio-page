@@ -6,7 +6,7 @@ export default function Home() {
       <Hero/>
       <section className="" id="projects">
         <h2 >Personal projects</h2>
-        <p className="opacity-50 mt-2">A full-stack developer with strong interest in AWS who loves building and learning cool stuff. I'm based in Bristol - you can find more about me below :)</p>  
+        <p className="opacity-50 mt-2">Checkout what I've done</p>  
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <a href="https://www.cafe.tommymapp.dev" className="relative lg:col-span-3">
