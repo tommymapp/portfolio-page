@@ -9,7 +9,7 @@ export default function Home() {
         <p className="opacity-50 mt-2">A full-stack developer with strong interest in AWS who loves building and learning cool stuff. I'm based in Bristol - you can find more about me below :)</p>  
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <a href="www.cafe.tommymapp.dev" className="relative lg:col-span-3">
+          <a href="https://www.cafe.tommymapp.dev" className="relative lg:col-span-3">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
               <img
