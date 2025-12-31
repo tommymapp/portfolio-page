@@ -19,7 +19,7 @@ export default function Home() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">DnD Cafe</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-white">NextJS sandbox</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">NextJS sandbox</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   An imaginary single-page marketing site for DnD Cafe to practice NextJS.
                 </p>
@@ -37,7 +37,7 @@ export default function Home() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">TBD</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   TBD               
                 </p>
@@ -55,7 +55,7 @@ export default function Home() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">TBD</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   TBD
                 </p>
@@ -73,7 +73,7 @@ export default function Home() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">TBD</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   TBD
                 </p>
@@ -91,7 +91,7 @@ export default function Home() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-white">TBD</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">TBD</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   TBD
                 </p>
