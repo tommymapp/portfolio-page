@@ -1,25 +1,15 @@
 import Hero from "./ui/hero"
-import Link from "next/link"
 
 export default function Home() {
   return (
     <>
       <Hero/>
-      {/* <section className="flex flex-col" id="projects">
-        <h2 className="font-semibold">Projects</h2>
-        <p className="">Notable personal projects</p>
-        <div className="border-b-1 my-l"></div>
-        {projects.map((p) => 
-          <ProjectCard key={p.title} imageUrl={p.imageUrl} title={p.title} description={p.description} link={p.link} category={p.category} />
-        )}
-      </section> */}
-
       <section className="" id="projects">
         <h2 >Personal projects</h2>
         <p className="opacity-50 mt-2">A full-stack developer with strong interest in AWS who loves building and learning cool stuff. I'm based in Bristol - you can find more about me below :)</p>  
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <Link href="www.cafe.tommymapp.dev" className="relative lg:col-span-3">
+          <a href="www.cafe.tommymapp.dev" className="relative lg:col-span-3">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
               <img
@@ -36,7 +26,7 @@ export default function Home() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
-          </Link>
+          </a>
           <div className="relative lg:col-span-3">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-tr-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
