@@ -14,7 +14,7 @@ export default function Home() {
         )}
       </section> */}
 
-      <section className="">
+      <section className="" id="projects">
         <h2 >Personal projects</h2>
         <p className="opacity-50 mt-2">A full-stack developer with strong interest in AWS who loves building and learning cool stuff. I'm based in Bristol - you can find more about me below :)</p>  
 
