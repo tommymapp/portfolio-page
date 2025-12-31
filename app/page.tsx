@@ -9,7 +9,7 @@ export default function Home() {
         <p className="opacity-50 mt-2">Checkout what I've built</p>  
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <a href="https://www.cafe.tommymapp.dev" className="relative lg:col-span-3">
+          <a href="https://www.cafe.tommymapp.dev" className="relative lg:col-span-3 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
               <img
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
           </a>
-          <div className="relative lg:col-span-3">
+          <div className="relative lg:col-span-3 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-tr-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
               <img
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-tr-4xl" />
           </div>
-          <div className="relative lg:col-span-2">
+          <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-bl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
               <img
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-bl-4xl" />
           </div>
-          <div className="relative lg:col-span-2">
+          <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <img
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15" />
           </div>
-          <div className="relative lg:col-span-2">
+          <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
               <img
