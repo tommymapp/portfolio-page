@@ -18,8 +18,15 @@ export default function FloatingAction() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setAtProjects(entry.isIntersecting)
-        const text:string = entry.isIntersecting ? 'Return Home' : 'View Projects'
-        setCurrentText(text)
+        
+        if(isMobile) {
+          setCurrentText('')
+        }
+        else {
+          const text:string = entry.isIntersecting ? 'Return Home' : 'View Projects'
+          setCurrentText(text)
+        }
+        
       },
       {
         threshold: 0,
@@ -46,7 +53,7 @@ export default function FloatingAction() {
       onClick={onClick}
       aria-label={atProjects ? 'Scroll to top' : 'Scroll to projects'}
       className="
-        px-xs
+        px-2xs
         py-2xs
         gap-2.5
         bg-secondary-500 text-primary-500
