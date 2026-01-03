@@ -35,7 +35,7 @@ export default function ProjectsBento() {
                 <h3 className="text-sm/4 font-semibold text-accent">TDD Practice</h3>
                 <p className="mt-2 text-lg font-medium tracking-tight">.Net | C#</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
-                  Upskilling my TDD skills by practicing on Code Katas with .Net               
+                  Upskilling my TDD skills by practicing on Code Katas with .Net.           
                 </p>
               </div>
             </div>
