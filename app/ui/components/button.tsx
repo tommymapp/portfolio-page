@@ -21,7 +21,7 @@ export default function Button({
 }: ButtonProps) {
   const variantClasses =
     variant === "primary"
-      ? "bg-accent hover:bg-accent/75"
+      ? "bg-accent hover:bg-accent/75 border-2 border-primary-500/0"
       : "bg-primary border-accenttwo border-solid border-2 hover:bg-accenttwo/90";
 
   const allClasses = `rounded-md px-s py-2xs text-sm font-semibold hover:cursor-pointer ${variantClasses} ${classes}`;
