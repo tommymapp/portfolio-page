@@ -15,7 +15,7 @@ export default function ProjectsBento() {
               />
               <div className="p-10 pt-4">
                 <h3 className="text-sm/4 font-semibold text-accent">DnD Cafe</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight">NextJS sandbox</p>
+                <p className="mt-2 text-lg font-medium tracking-tight">NextJS | TypeScript</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
                   An imaginary single-page marketing site for DnD Cafe to practice NextJS.
                 </p>
@@ -23,24 +23,24 @@ export default function ProjectsBento() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
           </a>
-          <div className="relative lg:col-span-3 mt-2 hover:mt-0 hover:pb-2 duration-300">
+          <a href="https://www.github.com/arkii1/TDDPractice" className="relative lg:col-span-3 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-tr-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
               <img
                 alt=""
-                src="/"
+                src="/tdd.svg"
                 className="h-80 object-cover object-left lg:object-right"
               />
               <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-accent">TBD</h3>
-                <p className="mt-2 text-lg font-medium tracking-tight">TBD</p>
+                <h3 className="text-sm/4 font-semibold text-accent">TDD Practice</h3>
+                <p className="mt-2 text-lg font-medium tracking-tight">.Net | C#</p>
                 <p className="mt-2 max-w-lg text-sm/6 opacity-50">
-                  TBD               
+                  Upskilling my TDD skills by practicing on Code Katas with .Net               
                 </p>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-tr-4xl" />
-          </div>
+          </a>
           <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-bl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
