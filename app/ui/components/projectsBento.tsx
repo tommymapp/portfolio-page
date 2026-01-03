@@ -41,7 +41,7 @@ export default function ProjectsBento() {
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 lg:rounded-tr-4xl" />
           </a>
-          <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
+          {/* <div className="relative lg:col-span-2 mt-2 hover:mt-0 hover:pb-2 duration-300">
             <div className="absolute inset-0 rounded-lg bg-secondary-500/5 lg:rounded-bl-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
               <img
@@ -94,7 +94,7 @@ export default function ProjectsBento() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
-          </div>
+          </div> */}
         </div>
       </section>
     )
