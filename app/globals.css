@@ -54,9 +54,23 @@
 }
 
 body {
-  background-color: var(--primary);
-  color: var(--secondary);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main {
+	max-width: 1080px;
+	width: 100vw;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+main {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 1.5rem;
 }
 
 h1 {
@@ -74,58 +88,6 @@ h3 {
   line-height: 1.3;
 }
 
-
-.sheet {
-  position: absolute;
-  inset: 0;
-  background: var(--secondary);
-  clip-path: polygon(
-    0% 60%,   /* left slightly lower */
-    100% 40%, /* right slightly higher */
-    100% 100%,
-    0% 100%
-  );
-  opacity: 0.01;
-}
-
-
-/* Animation sheets */
-.sheet {
-  animation: float 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
-  will-change: transform;
-}
-
-.sheet-1 {
-  animation-delay: 0s;
-}
-
-.sheet-2 {
-  animation-delay: -3.33s;
-}
-
-.sheet-3 {
-  animation-delay: -6.66s;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-24px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(24px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Floating action animations */
 @keyframes bob {
   0%, 100% {
     transform: translateY(0);
@@ -137,122 +99,4 @@ h3 {
 
 .animate-bob {
   animation: bob 2.5s ease-in-out infinite;
-}
-
-.heroAnimation {
-	--grid-width: max(3em, 10vmin);
-	--grid-height: max(3em, 10vmin);
-	--line-color: #aaaaaa;
-	--dot-color: #fff;
-	--dot-size: 0.4em;
-	--point-gap-width: calc(var(--grid-width) * 3);
-	--point-gap-height: calc(var(--grid-height) * 3);
-
-	position: absolute;
-	width: 100%;
-	height: 720px;
-	overflow: hidden;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	background: linear-gradient(
-		124deg,
-		#d54a0e,
-		#c06f1f,
-		#999e0d,
-		#1fb037,
-		#1e9ea4,
-		#2c21cc,
-		#b90dc9,
-		#c70c50
-	);
-	background-size: 1600% 1600%;
-	background-position: calc(var(--progress) * -1%);
-
-	&:before,
-	&:after,
-	.inner:before,
-	.inner:after {
-		content: '';
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		mix-blend-mode: overlay;
-	}
-
-	&:before {
-		background-image:
-			linear-gradient(var(--line-color), transparent 3px),
-			linear-gradient(to right, var(--line-color), transparent 3px);
-		background-size:
-			100% var(--grid-height),
-			var(--grid-width) 100%;
-		animation: 4s linear move infinite;
-	}
-
-	&:after {
-		transform: translateZ(-100%);
-		background-image: radial-gradient(
-			var(--dot-color) calc(var(--dot-size) * 0.8),
-			transparent calc(var(--dot-size) * 0.8)
-		);
-		background-size: var(--point-gap-width) var(--point-gap-height);
-		background-position: var(--point-gap-width) calc(var(--point-gap-height));
-	}
-
-	.inner {
-		&:before,
-		&:after {
-			background-size: var(--point-gap-width) var(--point-gap-height);
-			background-position: var(--point-gap-width) calc(var(--point-gap-height));
-		}
-
-		&:after {
-			background-image: radial-gradient(
-				var(--dot-color) calc(var(--dot-size) * 2),
-				transparent calc(var(--dot-size) * 2)
-			);
-			transform: scale(2, 2);
-			filter: blur(0.25em);
-			opacity: 0.8;
-		}
-
-		&:before {
-			background-image: radial-gradient(
-				var(--dot-color) var(--dot-size),
-				transparent var(--dot-size)
-			);
-			transform: scale(1.4, 1.4);
-			filter: blur(0.15em);
-		}
-	}
-	&:after {
-		animation: 4s linear move infinite;
-	}
-
-	.inner {
-		&:after {
-			animation: 4s linear move infinite;
-		}
-
-		&:before {
-			animation: 4s linear move infinite;
-		}
-	}
-}
-
-@keyframes move {
-	0% {
-		background-position: calc(var(--point-gap-width) / 2)
-			calc(var(--point-gap-height) / 2);
-	}
-	100% {
-		background-position: calc(var(--point-gap-width) / 2 * -1)
-			calc(var(--point-gap-height) / 2 * -1);
-	}
 }
