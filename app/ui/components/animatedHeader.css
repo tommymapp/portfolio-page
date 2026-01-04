@@ -1,10 +1,10 @@
 .animated-header {
-	--grid-height: max(10vmin, 3em);
-	--grid-width: max(10vmin, 3em);
+	--grid-height: max(10vmin, 4px);
+	--grid-width: max(10vmin, 4px);
 
-	--dot-size: 0.4em;
-	--dot-color: #f9fafb;
-	--line-color: #9ca3af;
+	--dot-size: 4px;
+	--dot-colour: #f9fafb;
+	--line-colour: #9ca3af;
 
 	--point-gap-width: calc(3 * var(--grid-width));
 	--point-gap-height: calc(3 * var(--grid-height));
@@ -21,10 +21,8 @@
 		#f43f5e
 	);
 	background-size: 1600% 1600%;
-	background-position-x: calc(-1% * var(--progress));
+	background-position-x: calc(var(--progress) * -1%);
     transition: background-position-x 1s linear;
-
-
 }
 
 .animated-header::before,
@@ -32,40 +30,39 @@
 	content: "";
 	position: absolute;
 	inset: 0;
-	z-index: 1;
 	mix-blend-mode: overlay;
 }
 
 .animated-header::before {
 	background-image:
-		linear-gradient(var(--line-color), transparent 3px),
-		linear-gradient(90deg, var(--line-color), transparent 3px);
+		linear-gradient(var(--line-colour), transparent 2px),
+		linear-gradient(90deg, var(--line-colour), transparent 2px);
 	background-size:
 		100% var(--grid-height),
 		var(--grid-width) 100%;
-	animation: move 4s linear infinite;
+	animation: move 8s linear infinite;
 }
 
 .animated-header::after {
 	transform: translateZ(-100%);
 	background-image: radial-gradient(
-		var(--dot-color) calc(var(--dot-size) * 0.8),
+		var(--dot-colour) calc(var(--dot-size) * 0.8),
 		transparent calc(var(--dot-size) * 0.8)
 	);
 	background-size: var(--point-gap-width) var(--point-gap-height);
 	background-position:
 		var(--point-gap-width)
 		var(--point-gap-height);
-	animation: move 4s linear infinite;
+	animation: move 8s linear infinite;
 }
 
 @keyframes move {
-	from {
+	0% {
 		background-position:
 			calc(var(--point-gap-width) / -2)
 			calc(var(--point-gap-height) / -2);
 	}
-	to {
+	100% {
 		background-position:
 			calc(var(--point-gap-width) / 2)
 			calc(var(--point-gap-height) / 2);
