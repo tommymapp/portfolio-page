@@ -10,13 +10,13 @@ export default function UnderlineLink({ href, ariaLabel, label, isActive} : {
         <Link 
             key={href} 
             href={href} 
-            className={`${isActive ? 'font-bold text-accent' : ''} relative group`} 
+            className={`${isActive ? 'font-bold text-accent' : ''} relative group p-4`} 
             aria-label={ariaLabel}
             >
                 {label}
                 <div
                     className={`
-                        absolute left-0 bottom-0
+                        
                         w-full h-[2px]
                         rounded
                         transform origin-left
