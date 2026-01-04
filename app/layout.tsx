@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./ui/components/navbar";
 import LightDarkToggle from "./ui/components/lightDarkToggle";
 import { Outfit } from "next/font/google";
+import HeroAnimation from "./ui/components/AnimatedHero";
 
 const outfit = Outfit({
   subsets: ["latin"],      // choose subsets you need
@@ -28,6 +29,8 @@ export default function RootLayout({
       <body
         className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className}`}
       >
+        <HeroAnimation />
+
         <div className="fixed right-xs top-5">
           <LightDarkToggle />
         </div>
