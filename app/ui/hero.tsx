@@ -15,7 +15,7 @@ export default function Hero() {
             <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75' ariaLabel="Go to Tommy's LinkedIn page" />
             <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75' ariaLabel="Go to Tommy's GitHub page"/>
           </div>
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-6 mt-6">
             <Button text="View CV" link='/cv.pdf' variant="primary" ariaLabel="Go to Contact me page"/>
             <Button text="Contact me" link='/contact' variant="secondary" ariaLabel="Go to Contact me page"/>
           </div>
