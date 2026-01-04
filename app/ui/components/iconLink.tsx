@@ -6,5 +6,5 @@ export default function IconLink({link, icon : IconComponent, classes = '', aria
     classes?: string,
     ariaLabel: string
 }) {
-    return <Link className='cursor-pointer' href={link}><IconComponent className={`h-8 w-8 ${classes}`} aria-label={ariaLabel}/></Link>
+    return <Link className='cursor-pointer' href={link} target="_blank"><IconComponent className={`h-8 w-8 ${classes}`} aria-label={ariaLabel}/></Link>
 }
