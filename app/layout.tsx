@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <main className="flex flex-col items-center justify-center w-screen p-s max-w-[1028px]">{children}</main>
+        <main className="flex flex-col items-center justify-center w-screen px-s max-w-[1028px]">{children}</main>
 
         <div 
           className="fixed h-screen w-full overflow-hidden bg-secondary/50 flex items-center justify-center top-50 pointer-events-none"
