@@ -27,7 +27,10 @@ export default function RootLayout({
       <body
         className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className}`}
       >
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
+        
 
         <main className="flex flex-col items-center justify-center w-screen px-s max-w-[1028px]">{children}</main>
 
