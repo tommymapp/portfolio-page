@@ -28,7 +28,9 @@ export default function FloatingAction() {
       },
       {
         threshold: 0,
-        rootMargin: isMobile ? '-20% 0px -60% 0px' : '0% 0px 0% 0px'
+        rootMargin: isMobile 
+          ? '-20% 0px -60% 0px'
+          : '-40% 0px -40% 0px'
       }
     )
 
