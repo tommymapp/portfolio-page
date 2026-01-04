@@ -1,6 +1,5 @@
 import "./globals.css";
 import Navbar from "./ui/components/navbar";
-import LightDarkToggle from "./ui/components/lightDarkToggle";
 import { Outfit } from "next/font/google";
 
 const outfit = Outfit({
@@ -28,9 +27,6 @@ export default function RootLayout({
       <body
         className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className}`}
       >
-        <div className="fixed right-xs top-5">
-          <LightDarkToggle />
-        </div>
         <Navbar />
 
         <main className="flex flex-col items-center justify-center w-screen p-s max-w-[1028px]">{children}</main>
