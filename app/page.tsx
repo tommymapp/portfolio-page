@@ -12,8 +12,8 @@ export default function Home() {
           <div>
             <h1 id="hero-title" className="font-bold">Hi, I'm <span className="underline">Tommy Mapp</span>. A full-stack developer who loves building high-quality solutions.</h1>
             <div className="flex justify-start gap-6 mt-8">
-              <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75' ariaLabel="Go to Tommy's LinkedIn page" />
-              <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75' ariaLabel="Go to Tommy's GitHub page"/>
+              <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's LinkedIn page" />
+              <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's GitHub page"/>
             </div>
           </div>
           
