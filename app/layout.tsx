@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className}`}
       >
-        <header>
+        <header className="absolute inset-0 h-min">
           <Navbar />
         </header>
         
