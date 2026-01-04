@@ -1,8 +1,6 @@
 import "./globals.css";
 import Navbar from "./ui/components/navbar";
-import LightDarkToggle from "./ui/components/lightDarkToggle";
 import { Outfit } from "next/font/google";
-import HeroAnimation from "./ui/components/AnimatedHero";
 
 const outfit = Outfit({
   subsets: ["latin"],      // choose subsets you need
@@ -27,26 +25,13 @@ export default function RootLayout({
         <link rel="canonical" href="https://tommymapp.dev/" />
       </head>
       <body
-        className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className}`}
+        className={`antialiased relative overflow-x-hidden flex flex-col items-center  transition-colors duration-300 ease-in-out ${outfit.className} pb-12`}
       >
-        <HeroAnimation />
+        <header className="">
+          <Navbar />
+        </header>
 
-        <div className="fixed right-xs top-5">
-          <LightDarkToggle />
-        </div>
-        <Navbar />
-
-        <main className="flex flex-col items-center justify-center w-screen p-s max-w-[1028px]">{children}</main>
-
-        <div 
-          className="fixed h-screen w-full overflow-hidden bg-secondary/50 flex items-center justify-center top-50 pointer-events-none"
-          aria-hidden="true"
-          >
-            <div className="sheet sheet-1" />
-            <div className="sheet sheet-2" />
-            <div className="sheet sheet-3" />
-        </div>
-
+        {children}          
       </body>
     </html>
   );

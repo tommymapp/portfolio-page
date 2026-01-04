@@ -7,10 +7,9 @@ export default function FloatingAction() {
   const [atProjects, setAtProjects] = useState(false)
   const [currentText, setCurrentText] = useState('View Projects')
 
-
-
   useEffect(() => {
     const isMobile = window.innerWidth < 640
+
     const projects = document.getElementById('projects')
     if(!projects)
       throw new Error('No project section found')
@@ -26,11 +25,12 @@ export default function FloatingAction() {
           const text:string = entry.isIntersecting ? 'Return Home' : 'View Projects'
           setCurrentText(text)
         }
-        
       },
       {
         threshold: 0,
-        rootMargin: isMobile ? '-20% 0px -60% 0px' : '0% 0px 0% 0px'
+        rootMargin: isMobile 
+          ? '-20% 0px -60% 0px'
+          : '-40% 0px -40% 0px'
       }
     )
 
@@ -52,27 +52,31 @@ export default function FloatingAction() {
     <button
       onClick={onClick}
       aria-label={atProjects ? 'Scroll to top' : 'Scroll to projects'}
-      className="
-        px-2xs
-        py-2xs
-        gap-2.5
+      className={`
+        p-2 sm:px-6 sm:py-2 
+        duration-300
+        gap-3
         bg-secondary-500 text-primary-500
         rounded-full 
         flex items-center
-        fixed -right-s mr-l bottom-s
+        fixed right-4 bottom-6
         cursor-pointer
         animate-bob
         z-50
-      "
+      `}
     >
-      {currentText}
-      <ArrowDownIcon
-        className={`
-          h-m w-m
-          transition-transform duration-500 ease-in-out
-          ${atProjects ? '-rotate-180' : 'rotate-0'}
-        `}
-      />
+        <ArrowDownIcon
+          className={`
+            h-6 w-6
+            transition-transform duration-500 ease-in-out
+            ${atProjects ? '-rotate-180' : 'rotate-0'}
+          `}
+        />
+
+      <span className='hidden sm:block'>
+        {currentText}
+      </span>
+      
     </button>
   )
 }
