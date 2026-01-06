@@ -35,6 +35,9 @@ importers:
       react-pdf:
         specifier: ^10.2.0
         version: 10.2.0(@types/react@19.2.7)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      tech-stack-icons:
+        specifier: ^3.3.2
+        version: 3.3.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4.1.18
@@ -2179,6 +2182,12 @@ packages:
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
+
+  tech-stack-icons@3.3.2:
+    resolution: {integrity: sha512-5QegRg78uTzcgHOg61yU5G9w5UO88/R+yzKagKZFyAocGZrGPy1kF0hV2BWT8IT8j+AQ0/gDX4Je4n/DQDfcuw==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
@@ -4655,6 +4664,11 @@ snapshots:
   tailwindcss@4.1.18: {}
 
   tapable@2.3.0: {}
+
+  tech-stack-icons@3.3.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+    dependencies:
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   tiny-inflate@1.0.3: {}
 
