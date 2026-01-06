@@ -1,0 +1,27 @@
+.timeline-row-right {
+    direction: rtl;
+}
+
+.timeline-row-right > *:not(.date) {
+    direction: ltr;
+}
+
+.timeline {
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--secondary);
+        height: 100%;
+        width: 1px;
+        z-index: -1;
+        opacity: 50%;
+    }
+
+    li {
+        grid-template-columns: 1fr 0.5fr 2.5rem 0.5fr 1fr;
+    }
+}
