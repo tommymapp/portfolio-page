@@ -25,3 +25,35 @@
         grid-template-columns: 1fr 0.5fr 2.5rem 0.5fr 1fr;
     }
 }
+
+@media only screen and (max-width: 640px) {
+  .timeline { 
+    &::before {
+        left: 6.25rem;
+    }
+
+    li {
+        grid-template-columns: 5fr 1fr 2.5rem 5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .timeline { 
+    direction: rtl;
+
+    > li {
+        .card, .date {
+            direction: ltr;
+        }
+    }
+
+    &::before {
+        left: 6.25rem;
+    }
+
+    li {
+        grid-template-columns: 5fr 1fr 2.5rem 5rem;
+    }
+  }
+}
