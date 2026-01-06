@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}          
-        <footer>
+        <footer className="mt-24">
           ©2025-{new Date().getFullYear()} Tommy Mapp | All rights reserved
         </footer>
       </body>
