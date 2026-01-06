@@ -40,8 +40,7 @@ export default function CareerTimeline() {
     return (
         <section className="h-full">
           <h2>Career Timeline</h2>
-          <p className="opacity-50 text-sm">My software engineering career so far.</p>
-          <ul className="timeline h-full w-full relative mt-12 py-8">
+          <ul className="timeline h-full w-full relative mt-8 py-8">
             {
                 generateCard(
                     'March 2022', 
