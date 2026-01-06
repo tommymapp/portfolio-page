@@ -20,9 +20,9 @@ export default function CareerTimeline() {
             `}
         >
             <div className="card box-border px-4 py-4 border-secondary-500/75 border-2 bg-transparent">
-                <p className="font-semibold text-lg">{title}</p>
-                <p className="text-xs opacity-50 -mt-0.5">{company}</p>
-                <p className="opacity-75 mt-3">{description}</p>
+                <p className="font-bold text-lg">{title}</p>
+                <p className="text-sm opacity-60 -mt-0.5 font-thin">{company}</p>
+                <p className="opacity-50 mt-3">{description}</p>
                 <div className='mt-6 flex gap-3'>
                     {techIcons.map(icon => <StackIcon key={icon} className={`h-5 w-5 ${['expressjs', 'aws'].includes(icon) ? 'brightness-0 invert' : ''}`} name={icon} />)}
                 </div>
