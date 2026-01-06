@@ -47,9 +47,9 @@ export default function AnimatedHeader({ children, variant: type = 'default' }: 
 	}, [duration]);
 
 	return (
-        <header className={`${type == 'hero' ? 'h-[720px]' : 'h-[480px]'}`}>
+        <header className={`min-h-[480px] ${type == 'hero' ? 'h-[80vh]' : 'h-[480px]'}`}>
             {children}
-            <div className={`animated-header absolute w-full overflow-hidden top-0 left-0 right-0 bottom-0 z-[-1] ${type == 'hero' ? 'h-[720px]' : 'h-[480px]'}`} ref={animRef}></div>
+            <div className={`animated-header absolute w-full overflow-hidden top-0 left-0 right-0 bottom-0 z-[-1] min-h-[480px] ${type == 'hero' ? 'h-[80vh]' : 'h-[480px]'}`} ref={animRef}></div>
         </header>
     )
 }
