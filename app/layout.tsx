@@ -29,6 +29,9 @@ export default function RootLayout({
       >
         <Navbar />
         {children}          
+        <footer>
+          ©2025-{new Date().getFullYear()} Tommy Mapp | All rights reserved
+        </footer>
       </body>
     </html>
   );
