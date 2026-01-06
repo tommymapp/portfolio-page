@@ -2,8 +2,6 @@
 	--grid-height: max(10vmin, 4px);
 	--grid-width: max(10vmin, 4px);
 
-	--dot-size: 4px;
-	--dot-colour: #f9fafb;
 	--line-colour: #9ca3af;
 
 	--point-gap-width: calc(3 * var(--grid-width));
@@ -40,19 +38,6 @@
 	background-size:
 		100% var(--grid-height),
 		var(--grid-width) 100%;
-	animation: move 8s linear infinite;
-}
-
-.animated-header::after {
-	transform: translateZ(-100%);
-	background-image: radial-gradient(
-		var(--dot-colour) calc(var(--dot-size) * 0.8),
-		transparent calc(var(--dot-size) * 0.8)
-	);
-	background-size: var(--point-gap-width) var(--point-gap-height);
-	background-position:
-		var(--point-gap-width)
-		var(--point-gap-height);
 	animation: move 8s linear infinite;
 }
 
