@@ -9,11 +9,15 @@ const links = [
         route: '/',
         ariaLabel: 'Home page'
     },
-
     {
         label: 'Contact',
         route: '/contact',
         ariaLabel: 'Contact page'
+    },
+    {
+        label: 'Blogs',
+        route: '/blogs',
+        ariaLabel: 'Blogs page'
     },
     {
         label: 'CV',
