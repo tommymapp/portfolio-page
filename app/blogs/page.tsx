@@ -1,4 +1,5 @@
 import AnimatedHeader from "../ui/components/animatedHeader"
+import Link from "next/link"
 
 export default function Page() {
      return (
@@ -11,8 +12,9 @@ export default function Page() {
                 </AnimatedHeader>
                 <main>
                     <section>
-                        <h3>Recent blogs</h3>
+                        <h2>Recent blogs</h2>
                         <p className="text-sm mt-2 opacity-75">Wait, I actually need to write something...</p>
+                        <p>Well, until I do the next iteration here's a <Link className="underline" href="/blogs/hello-world">working example</Link></p>
                     </section>
                 </main>
             </>
