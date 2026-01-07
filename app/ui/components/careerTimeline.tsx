@@ -38,8 +38,8 @@ export default function CareerTimeline() {
 
 
     return (
-        <section className="h-full">
-          <h2 id='timeline'>Career Timeline</h2>
+        <section className="h-full" id='timeline'>
+          <h2>Career Timeline</h2>
           <ul className="timeline h-full w-full relative mt-8 py-8">
             {
                 generateCard(
