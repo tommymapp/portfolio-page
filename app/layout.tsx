@@ -25,7 +25,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://tommymapp.dev/" />
       </head>
       <body
-        className={`bg-primary-500 text-secondary-500 antialiased relative overflow-x-hidden flex flex-col items-center transition-colors duration-300 ease-in-out ${outfit.className} pb-12`}
+        className={`scroll-smooth bg-primary-500 text-secondary-500 antialiased relative overflow-x-hidden flex flex-col items-center transition-colors duration-300 ease-in-out ${outfit.className} pb-12`}
       >
         <Navbar />
         {children}          
