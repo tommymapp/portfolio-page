@@ -26,7 +26,7 @@ export default function Navbar() {
     const pathname = usePathname()
 
     return (
-        <nav className="w-screen flex gap-8 justify-center absolute inset-0 h-min">
+        <nav className="w-screen flex gap-8 justify-center absolute inset-0 h-min z-10">
             {links.map(({label, route, ariaLabel } : {label: string, route: string, ariaLabel: string}) => 
               <UnderlineLink key={route} href={route} isActive={pathname == route} ariaLabel={ariaLabel} label={label}/>
             )}
