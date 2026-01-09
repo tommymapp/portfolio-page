@@ -10,11 +10,6 @@ const links = [
         ariaLabel: 'Home page'
     },
     {
-        label: 'CV',
-        route: '/cv.pdf',
-        ariaLabel: 'View CV'
-    },
-    {
         label: 'Blogs',
         route: '/blogs',
         ariaLabel: 'Blogs page'
@@ -24,6 +19,11 @@ const links = [
         route: '/contact',
         ariaLabel: 'Contact page'
     },
+    {
+        label: 'CV',
+        route: '/cv.pdf',
+        ariaLabel: 'View CV'
+    }
 ]
 
 export default function Navbar() {
