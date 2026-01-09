@@ -23,7 +23,7 @@ export default function Home() {
             </a>
           </div>
           
-          <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="hidden sm:block border-4 border-secondary-500 w-80 h-80 object-cover min-w-80 shadow-xl"/>
+          <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="hidden sm:block border-4 border-secondary-500 w-80 h-80 object-cover min-w-80 shadow-xl rounded-3xl"/>
         </section>
       </AnimatedHeader>
       <main>
