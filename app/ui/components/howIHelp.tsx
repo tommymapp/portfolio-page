@@ -33,7 +33,7 @@ export default function HowIHelp() {
     )
 
     return (
-        <section>
+        <section id='howIHelp'>
           <h2>
             How I help
           </h2>
