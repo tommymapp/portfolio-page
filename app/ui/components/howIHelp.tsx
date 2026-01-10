@@ -22,10 +22,10 @@ const howIHelpData = [
 
 export default function HowIHelp() {
     const helpCard = ({ title, description, icon: Icon }: {title: string, description:string, icon: React.ComponentType<{className?:string }>}) => (
-        <li key={title} className="flex gap-3 border-2 border-secondary-500/50 px-6 pt-2 pb-7 rounded-3xl w-1/3">
+        <li key={title} className="flex gap-3 border-2 border-secondary-500/50 px-6 pt-2 pb-7 rounded-3xl w-full lg:w-1/3">
             <Icon className='h-20 min-w-12'/>
             <div>
-                <p className="font-semibold text-lg mt-4">{title}</p>
+                <p className="font-semibold text-lg mt-2 lg:mt-4">{title}</p>
                 <p className="opacity-60">{description}</p>
             </div>
             
@@ -38,7 +38,7 @@ export default function HowIHelp() {
             How I help
           </h2>
           <p className='opacity-60'>From designing product, building secure, scalable & sleek applications to improving tech-culture to exceed team goals.</p>
-          <ul className="flex justify-center align-center w-full gap-8 py-12 ">
+          <ul className="flex flex-col lg:flex-row justify-center align-center w-full gap-8 py-12 ">
             {
                 howIHelpData.map(d => helpCard(d))
             }
