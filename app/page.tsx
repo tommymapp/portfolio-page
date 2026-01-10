@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <AnimatedHeader variant="hero">
-        <section className="h-full w-full flex justify-around gap-12 items-center relative">
-          <div>
+        <section className="h-full w-full flex flex-col-reverse flex-reverse md:flex-row justify-center gap-10 md:gap-12 items-center relative">
+          <div className="px-8 md:px-0">
             <h1 id="hero-title" className="font-bold">Hi, I'm <span className="underline">Tommy Mapp</span></h1>
             <p className="text-xl mt-2">A product-minded engineer shipping software from frontend to AWS-powered infrastructure</p>
             <div className="flex justify-start gap-6 mt-4">
@@ -23,7 +23,13 @@ export default function Home() {
             </a>
           </div>
           
-          <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="hidden sm:block border-4 border-secondary-500 w-80 h-80 object-cover min-w-80 shadow-xl rounded-3xl"/>
+          <div className="relative">
+              <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="border-4 border-secondary-500 w-60 h-60 md:w-80 md:h-80 object-cover md:min-w-80 shadow-xl rounded-3xl"/>
+              <a href="https://www.credly.com/badges/5b17ba33-d3e3-431b-acbf-915179e4c46a" target="_blank">
+                <Image className="absolute h-28 w-28 md:h-32 md:w-32 right-0 bottom-0 translate-1/4 text-shadow-lg" width={160} height={160} src={"/aws-saa-003.png"} alt="AWS Solutions Architect Associate badge"/>
+              </a>
+          </div>
+          
         </section>
       </AnimatedHeader>
       <main>
