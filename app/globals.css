@@ -70,7 +70,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	gap: 1.5rem;
+	gap: 3rem;
 }
 
 h1 {

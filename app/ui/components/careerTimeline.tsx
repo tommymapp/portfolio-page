@@ -19,7 +19,7 @@ export default function CareerTimeline() {
             ${isRight ? 'timeline-row-right' : ''}
             `}
         >
-            <div className="card box-border px-4 py-4 border-secondary-500/75 border-2 bg-transparent rounded-3xl">
+            <div className="card box-border px-4 py-4 border-secondary-500/50 border-2 bg-transparent rounded-3xl">
                 <p className="font-bold text-lg">{title}</p>
                 <p className="text-sm opacity-60 -mt-0.5 font-thin">{company}</p>
                 <p className="opacity-60 mt-3">{description}</p>
@@ -38,8 +38,9 @@ export default function CareerTimeline() {
 
 
     return (
-        <section className="h-full" id='timeline'>
+        <section className="h-full" id='how-i-help'>
           <h2>Career Timeline</h2>
+          <p className='opacity-60'>From SaaS startup, to InsurTech scale-ups, and now something new???</p>
           <ul className="timeline h-full w-full relative mt-8 py-8">
             {
                 generateCard(
