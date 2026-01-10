@@ -39,7 +39,7 @@ export default function CareerTimeline() {
 
     return (
         <section className="h-full" id='how-i-help'>
-          <h2>Career Timeline</h2>
+          <h2>Career timeline</h2>
           <p className='opacity-60'>From SaaS startup, to InsurTech scale-ups, and now something new???</p>
           <ul className="timeline h-full w-full relative mt-8 py-8">
             {
