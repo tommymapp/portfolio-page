@@ -4,6 +4,7 @@ import StackIcon from 'tech-stack-icons';
 import Image, { StaticImageData } from 'next/image';
 import aspenifyImage from '@/public/aspenify.svg';
 import durellImage from '@/public/durell.svg';
+import madetechImage from '@/public/madetech.svg';
 import Link from 'next/link';
 
 export default function CareerTimeline() {
@@ -58,7 +59,7 @@ export default function CareerTimeline() {
     return (
         <section className="timeline-section relative h-full" id='timeline'>
           <h2>Career timeline</h2>
-          <p className='opacity-60 mt-2'>From SaaS startup to Insur-tech scale-ups, and something to be announced.</p>
+          <p className='opacity-60 mt-2'>From SaaS startup and Insur-tech scale-ups, to public service consultancy.</p>
           <ul className="timeline h-full w-full relative mt-12 py-8">
             {
                 generateCard(
@@ -105,11 +106,15 @@ export default function CareerTimeline() {
             {
                 generateCard(
                     'Feb 2026', 
-                    'To be announced', 
+                    'MadeTech', 
                     'Software Engineer', 
                     'Joining new company.',
                     true,
                     'mt-12',
+                    [],
+                    madetechImage,
+                    '',
+                    'https://www.madetech.com/'
                 )
             }
           </ul>
