@@ -31,7 +31,7 @@ export default function RootLayout({
         {children}          
         <footer className="mt-12 flex flex-col items-center">
           <p>©2025-{new Date().getFullYear()} Tommy Mapp  | All rights reserved</p>
-          <small className="opacity-50 mt-1">Icons from Heroicons, React Icons, and Tech Stack Icons | Company logos used for informational purposes only</small>
+          <small className="opacity-50 mt-1 font-thin">Icons from Heroicons, React Icons, and Tech Stack Icons | Company logos used for informational purposes only</small>
         </footer>
       </body>
     </html>
