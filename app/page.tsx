@@ -19,7 +19,7 @@ export default function Home() {
               <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's LinkedIn page" />
               <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's GitHub page"/>
             </div>
-            <a className="hidden sm:visible absolute bottom-0 left-1/2 -translate-x-1/2 mb-6 text-lg cursor-pointer" onClick={() => document.getElementById('howIHelp')?.scrollIntoView({ behavior: 'smooth' })}>
+            <a className="hidden sm:block absolute bottom-0 left-1/2 -translate-x-1/2 mb-6 text-lg cursor-pointer" onClick={() => document.getElementById('howIHelp')?.scrollIntoView({ behavior: 'smooth' })}>
                <FaArrowDown className="inline h-6 w-6 mr-1.5"/> Learn more
             </a>
           </div>
