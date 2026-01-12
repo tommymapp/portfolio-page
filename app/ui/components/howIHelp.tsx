@@ -28,7 +28,6 @@ export default function HowIHelp() {
                 <p className="font-semibold text-lg">{title}</p>
                 <p className="opacity-60 mt-1">{description}</p>
             </div>
-            
         </li>
     )
 
