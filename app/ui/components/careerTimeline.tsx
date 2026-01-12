@@ -24,7 +24,7 @@ export default function CareerTimeline() {
                 <p className="text-sm opacity-60 -mt-0.5 font-thin">{company}</p>
                 <p className="opacity-60 mt-2">{description}</p>
                 <div className='mt-6 flex gap-3'>
-                    {techIcons.map(icon => <StackIcon key={icon} className={`h-5 w-5 ${['expressjs', 'aws'].includes(icon) ? 'brightness-0 invert' : ''}`} name={icon} />)}
+                    {techIcons.map(icon => <StackIcon key={icon} className={`h-5 w-5 ${['expressjs', 'aws', 'mysql'].includes(icon) ? 'brightness-0 invert' : ''}`} name={icon} />)}
                 </div>
                 
             </div>
