@@ -22,7 +22,6 @@
 	background-position-x: calc(var(--progress) * -1%);
     transition: background-position-x 1s linear;
 	transform: skewY(-3deg);
-	margin-top: -75px;
 }
 
 .animated-header::before,
