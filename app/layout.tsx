@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}          
-        <footer className="mt-12 flex flex-col items-center">
+        <footer className="mt-12 flex flex-col items-center text-center">
           <p>©2025-{new Date().getFullYear()} Tommy Mapp  | All rights reserved</p>
           <small className="opacity-50 mt-1 font-thin">Icons from Heroicons, React Icons, and Tech Stack Icons | Company logos used for informational purposes only</small>
         </footer>
