@@ -1,6 +1,9 @@
 import './careerTimeline.css';
 import { BriefcaseIcon } from '@heroicons/react/24/solid';
 import StackIcon from 'tech-stack-icons';
+import Image, { StaticImageData } from 'next/image';
+import aspenifyImage from '@/public/aspenify.svg';
+import durellImage from '@/public/durell.svg';
 
 export default function CareerTimeline() {
     const generateCard = (
@@ -10,7 +13,9 @@ export default function CareerTimeline() {
         description: string,
         isRight: boolean = false,
         classes: string = '',
-        techIcons: string[] = []
+        techIcons: string[] = [],
+        companyIcon?: StaticImageData,
+        iconClass?: string
     ) => (
         <li
             className={`
@@ -29,8 +34,14 @@ export default function CareerTimeline() {
                 
             </div>
             <div className="h-[1px] bg-secondary-500 m-4 opacity-50"></div>
-            <div className='flex w-full justify-center bg-secondary-500 p-1.5 rounded-full shadow-lg border-[4px] border-primary-500' >
-                <BriefcaseIcon  className='h-full w-full text-primary-500'/>
+            <div className={`${companyIcon == null ? 'p-1.5' : 'p-0.25'} flex w-full justify-center bg-secondary-500 overflow-hidden rounded-full shadow-lg border-[4px] border-primary-500`} >
+                {
+                    companyIcon == null ? 
+                        <BriefcaseIcon  className='h-full w-full text-primary-500'/>
+                        :
+                        <Image src={companyIcon} alt={`Icon of ${company}`} height='32' width='32' className={iconClass}/>
+                }
+                
             </div>
             <div className={`date mx-4 text-sm opacity-75`}>{date}</div>
         </li>
@@ -50,7 +61,9 @@ export default function CareerTimeline() {
                     'Built out product demos for venture capitalists and improved accessibility of core site.',
                     false,
                     '',
-                    ['js', 'react', 'expressjs', 'mongodb', 'nodejs']
+                    ['js', 'react', 'expressjs', 'mongodb', 'nodejs'],
+                    aspenifyImage,
+                    'p-0.25 mr-[2px]'
                 )
             }
             {
@@ -61,7 +74,8 @@ export default function CareerTimeline() {
                     'Started building foundation of modern policy admin system, in addition to implementing third-party intergrations & studying to AWS SAA-003.',
                     true,
                     'mt-12',
-                    ['net', 'c#', 'js', 'mysql', 'aws']
+                    ['net', 'c#', 'js', 'mysql', 'aws'],
+                    durellImage
                 )
             }
             {
@@ -72,7 +86,8 @@ export default function CareerTimeline() {
                     'Lead team of three developing modern policy admin system, in addition to owning AWS infra after completing AWS SAA-003.',
                     false,
                     'mt-12',
-                    ['net', 'c#', 'js', 'mysql', 'aws']
+                    ['net', 'c#', 'js', 'mysql', 'aws'],
+                    durellImage
                 )
             }
             {
