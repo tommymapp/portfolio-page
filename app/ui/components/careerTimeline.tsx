@@ -59,7 +59,7 @@ export default function CareerTimeline() {
     return (
         <section className="timeline-section relative h-full" id='timeline'>
           <h2>Career timeline</h2>
-          <p className='opacity-60 mt-2'>From SaaS startup and Insur-tech scale-ups, to public service consultancy.</p>
+          <p className='opacity-60 mt-2'>From a SaaS start-up and Insur-tech scale-up, to public service consultancy.</p>
           <ul className="timeline h-full w-full relative mt-12 py-8">
             {
                 generateCard(
@@ -106,7 +106,7 @@ export default function CareerTimeline() {
             {
                 generateCard(
                     'Feb 2026', 
-                    'MadeTech', 
+                    'Made Tech', 
                     'Software Engineer', 
                     'Joining new company.',
                     true,
