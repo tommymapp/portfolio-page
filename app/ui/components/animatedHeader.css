@@ -21,6 +21,8 @@
 	background-size: 1600% 1600%;
 	background-position-x: calc(var(--progress) * -1%);
     transition: background-position-x 1s linear;
+	transform: skewY(-3deg);
+	margin-top: -75px;
 }
 
 .animated-header::before,
@@ -29,6 +31,7 @@
 	position: absolute;
 	inset: 0;
 	mix-blend-mode: overlay;
+	transform: skewY(3deg);
 }
 
 .animated-header::before {
