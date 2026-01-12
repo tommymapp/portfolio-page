@@ -4,6 +4,7 @@ import StackIcon from 'tech-stack-icons';
 import Image, { StaticImageData } from 'next/image';
 import aspenifyImage from '@/public/aspenify.svg';
 import durellImage from '@/public/durell.svg';
+import Link from 'next/link';
 
 export default function CareerTimeline() {
     const generateCard = (
@@ -15,7 +16,8 @@ export default function CareerTimeline() {
         classes: string = '',
         techIcons: string[] = [],
         companyIcon?: StaticImageData,
-        iconClass?: string
+        iconClass?: string,
+        companyLink: string = ''
     ) => (
         <li
             className={`
@@ -39,7 +41,7 @@ export default function CareerTimeline() {
                 
             </div>
             <div className="h-[1px] bg-secondary-500 m-4 opacity-50"></div>
-            <div className={`${companyIcon == null ? 'p-1.5' : 'p-0.25'} flex w-full justify-center bg-secondary-500 overflow-hidden rounded-full shadow-lg border-[4px] border-primary-500`} >
+            <Link href={companyLink} target='_blank' className={`${companyIcon == null ? 'p-1.5' : 'p-0.25'} flex w-full justify-center bg-secondary-500 overflow-hidden rounded-full shadow-lg border-[4px] border-primary-500`} >
                 {
                     companyIcon == null ? 
                         <BriefcaseIcon  className='h-full w-full text-primary-500'/>
@@ -47,7 +49,7 @@ export default function CareerTimeline() {
                         <Image src={companyIcon} alt={`Icon of ${company}`} height='32' width='32' className={iconClass}/>
                 }
                 
-            </div>
+            </Link>
             <div className={`date mx-4 text-sm opacity-75`}>{date}</div>
         </li>
         )
@@ -68,7 +70,8 @@ export default function CareerTimeline() {
                     '',
                     ['js', 'react', 'expressjs', 'mongodb', 'nodejs'],
                     aspenifyImage,
-                    'p-0.25 mr-[2px]'
+                    'p-0.25 mr-[2px]',
+                    'https://aspenify.com/'
                 )
             }
             {
@@ -80,7 +83,9 @@ export default function CareerTimeline() {
                     true,
                     'mt-12',
                     ['net', 'c#', 'js', 'mysql', 'aws'],
-                    durellImage
+                    durellImage,
+                    '',
+                    'https://www.durell.co.uk/'
                 )
             }
             {
@@ -92,7 +97,9 @@ export default function CareerTimeline() {
                     false,
                     'mt-12',
                     ['net', 'c#', 'js', 'mysql', 'aws'],
-                    durellImage
+                    durellImage,
+                    '',
+                    'https://www.durell.co.uk/'
                 )
             }
             {
@@ -102,7 +109,7 @@ export default function CareerTimeline() {
                     'Software Engineer', 
                     'Joining new company.',
                     true,
-                    'mt-12'
+                    'mt-12',
                 )
             }
           </ul>
