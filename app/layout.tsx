@@ -30,7 +30,7 @@ export default function RootLayout({
         <Navbar />
         {children}          
         <footer className="mt-24">
-          ©2025-{new Date().getFullYear()} Tommy Mapp | All rights reserved
+          ©2025-{new Date().getFullYear()} Tommy Mapp | All rights reserved | Icons from Heroicons, React Icons, and Tech Stack Icons
         </footer>
       </body>
     </html>
