@@ -36,7 +36,7 @@ export default function HowIHelp() {
           <h2>
             How I help
           </h2>
-          <p className='opacity-60 mt-2'>From creating products & building infrastructure to empowering software teams to work more effectively.</p>
+          <p className='opacity-60 mt-2'>From creating products and building infrastructure to empowering software teams to work more effectively.</p>
           <ul className="flex flex-col lg:flex-row justify-center align-center w-full gap-8 py-12 ">
             {
                 howIHelpData.map(d => helpCard(d))
