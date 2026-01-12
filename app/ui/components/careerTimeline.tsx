@@ -56,7 +56,7 @@ export default function CareerTimeline() {
     return (
         <section className="timeline-section relative h-full" id='timeline'>
           <h2>Career timeline</h2>
-          <p className='opacity-60'>From SaaS startup, to InsurTech scale-ups, and now something new???</p>
+          <p className='opacity-60 mt-2'>From SaaS startup, to InsurTech scale-ups, and now something new???</p>
           <ul className="timeline h-full w-full relative mt-12 py-8">
             {
                 generateCard(
