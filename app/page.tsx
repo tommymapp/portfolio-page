@@ -14,7 +14,7 @@ export default function Home() {
         <section className="h-full w-full flex flex-col-reverse flex-reverse md:flex-row justify-center gap-10 md:gap-12 items-center relative md:px-8">
           <div className="">
             <h1 id="hero-title" className="font-bold">Hi, I'm <span className="underline">Tommy Mapp</span></h1>
-            <p className="text-xl mt-2">I design and build secure, secure software end-to-end.</p>
+            <p className="text-xl mt-2">I design and build secure, scalable software end-to-end.</p>
             <div className="flex justify-start gap-6 mt-4">
               <IconLink link="https://www.linkedin.com/in/tommymapp/" icon={FaLinkedin} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's LinkedIn page" />
               <IconLink link="https://github.com/arkii1" icon={FaGithub} classes='opacity-75 duration-100 hover:opacity-100' ariaLabel="Go to Tommy's GitHub page"/>
