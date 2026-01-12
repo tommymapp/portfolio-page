@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           
           <div className="relative">
-              <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="border-4 border-secondary-500 w-60 h-60 sm:w-70 sm:h-70 md:w-80 md:h-80 object-cover md:min-w-80 shadow-xl rounded-3xl"/>
+              <Image src="/selfie.jpg" alt="Tommy looking extremeley cool" width="300" height="150" className="border-4 border-secondary-500 w-60 h-60 sm:w-70 sm:h-70 md:w-80 md:h-80 object-cover md:min-w-80 shadow-xl rounded-3xl -skew-y-3"/>
               <a href="https://www.credly.com/badges/5b17ba33-d3e3-431b-acbf-915179e4c46a" target="_blank">
                 <Image className="absolute h-28 w-28 md:h-32 md:w-32 right-0 bottom-0 translate-1/4 text-shadow-lg" width={160} height={160} src={"/aws-saa-003.png"} alt="AWS Solutions Architect Associate badge"/>
               </a>
