@@ -22,7 +22,7 @@ const howIHelpData = [
 
 export default function HowIHelp() {
     const helpCard = ({ title, description, icon: Icon }: {title: string, description:string, icon: React.ComponentType<{className?:string }>}) => (
-        <li key={title} className="bg-secondary-500/5 flex gap-3 border-2 border-secondary-500/50 p-4 rounded-3xl w-full lg:w-1/3">
+        <li key={title} className="shadow-sm shadow-secondary-500/50 bg-secondary-500/5 flex gap-3 border-2 border-secondary-500/50 p-4 rounded-3xl w-full lg:w-1/3">
             <Icon className='mb-auto h-min min-w-12 w-12'/>
             <div>
                 <p className="font-semibold text-lg">{title}</p>
