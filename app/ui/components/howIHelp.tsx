@@ -4,18 +4,18 @@ import { CodeBracketIcon, ChartBarIcon } from '@heroicons/react/24/solid';
 const howIHelpData = [
     {
         title: 'Full-stack development',
-        description: 'I develop modern solution, from sleek UX, building secure & performant APIs to designing robust application',
+        description: 'I develop modern solutions end-to-end, from intentional user experiences to robust backend APIs.',
         icon: CodeBracketIcon
     },
     {
         title: 'AWS development',
-        description: 'I design secure, scalable & maintainable software systems in a varity of contexts using AWS.',
+        description: 'I architect scalable, resilient, efficient and fault-tolerant infrastructure dependent on customer needs.',
         icon: (props:React.ComponentProps<'svg'>) => <StackIcon {...props} className={`${props.className} brightness-0 invert`} name='aws' />
     },
     
     {
-        title: 'Process improvment',
-        description: 'I lead others and implement improvements allowing others to be better at their job, from DevOps to workflows.',
+        title: 'Leadership',
+        description: 'I proactively mentor others and improve development processes to help teams perform more effectively.',
         icon: ChartBarIcon
     }
 ]
@@ -36,7 +36,7 @@ export default function HowIHelp() {
           <h2>
             How I help
           </h2>
-          <p className='opacity-60 mt-2'>From designing product, building secure, scalable & sleek applications to improving tech-culture to exceed team goals.</p>
+          <p className='opacity-60 mt-2'>From creating products & building infrastructure to empowering software teams to work more effectively.</p>
           <ul className="flex flex-col lg:flex-row justify-center align-center w-full gap-8 py-12 ">
             {
                 howIHelpData.map(d => helpCard(d))

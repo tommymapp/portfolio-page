@@ -58,14 +58,14 @@ export default function CareerTimeline() {
     return (
         <section className="timeline-section relative h-full" id='timeline'>
           <h2>Career timeline</h2>
-          <p className='opacity-60 mt-2'>From SaaS startup, to InsurTech scale-ups, and now something new???</p>
+          <p className='opacity-60 mt-2'>From SaaS startup, to Insur-tech scale-ups, and something to be announced.</p>
           <ul className="timeline h-full w-full relative mt-12 py-8">
             {
                 generateCard(
                     'March 2022', 
                     'Aspenify', 
                     'Junior Developer', 
-                    'Built out product demos for venture capitalists and improved accessibility of core site.',
+                    'Developed product demos and improved accessibility and UX of the core site.',
                     false,
                     '',
                     ['js', 'react', 'expressjs', 'mongodb', 'nodejs'],
@@ -79,7 +79,7 @@ export default function CareerTimeline() {
                     'Feb 2023', 
                     'Durell Software', 
                     'Junior Developer', 
-                    'Started building foundation of modern policy admin system, in addition to implementing third-party intergrations & studying to AWS SAA-003.',
+                    'Built the foundation of a modern policy admin system, implemented third-party integrations, and earned AWS SAA-003 certification.',
                     true,
                     'mt-12',
                     ['net', 'c#', 'js', 'mysql', 'aws'],
@@ -93,7 +93,7 @@ export default function CareerTimeline() {
                     'April 2024', 
                     'Durell Software', 
                     'Software Developer', 
-                    'Lead team of three developing modern policy admin system, in addition to owning AWS infra after completing AWS SAA-003.',
+                    'Led a team of three developing a modern policy admin system and managed AWS infrastructure, applying best practices for scalability and reliability.',
                     false,
                     'mt-12',
                     ['net', 'c#', 'js', 'mysql', 'aws'],
