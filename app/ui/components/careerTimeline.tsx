@@ -19,7 +19,7 @@ export default function CareerTimeline() {
             ${isRight ? 'timeline-row-right' : ''}
             `}
         >
-            <div className="card box-border px-4 py-4 border-secondary-500/50 border-2 bg-transparent rounded-3xl">
+            <div className="bg-secondary-500/5 card box-border px-4 py-4 border-secondary-500/50 border-2 rounded-3xl">
                 <p className="font-bold text-lg">{title}</p>
                 <p className="text-sm opacity-60 -mt-0.5 font-thin">{company}</p>
                 <p className="opacity-60 mt-2">{description}</p>
