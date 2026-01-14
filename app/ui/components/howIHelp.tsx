@@ -8,7 +8,7 @@ const howIHelpData = [
         icon: CodeBracketIcon
     },
     {
-        title: 'AWS development',
+        title: 'AWS architecture',
         description: 'I architect scalable, resilient, efficient and fault-tolerant infrastructure dependent on customer needs.',
         icon: (props:React.ComponentProps<'svg'>) => <StackIcon {...props} className={`${props.className} brightness-0 invert`} name='aws' />
     },
