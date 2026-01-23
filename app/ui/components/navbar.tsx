@@ -9,11 +9,11 @@ const links = [
         route: '/',
         ariaLabel: 'Home page'
     },
-    {
-        label: 'Blogs',
-        route: '/blogs',
-        ariaLabel: 'Blogs page'
-    },
+    // {
+    //     label: 'Blogs',
+    //     route: '/blogs',
+    //     ariaLabel: 'Blogs page'
+    // },
     {
         label: 'Contact',
         route: '/contact',
