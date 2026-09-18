@@ -31,10 +31,10 @@ export default function CareerTimeline() {
                 <p className="font-bold text-lg">{title}</p>
                 <p className="text-sm opacity-60 -mt-0.5 font-thin">{company}</p>
                 <p className="opacity-60 mt-2">{description}</p>
-                <div className='mt-6 flex gap-3'>
+                <div className='mt-6 grid grid-cols-5 md:flex gap-3'>
                     {techIcons.map(icon => <div className='relative group' key={icon}>
                         <StackIcon className={`h-5 w-5 ${['expressjs', 'aws'].includes(icon) ? 'brightness-0 invert' : ''}`} name={icon} />
-                         <span className="left-0  absolute bottom-full mb-2 px-2 py-1 text-xs rounded-lg bg-secondary-500 text-primary-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                         <span className="left-0  absolute bottom-full mb-2 px-0 md:px-2 py-1 text-xs rounded-lg bg-secondary-500 text-primary-500 opacity-0 group-hover:opacity-100 transition-opacity">
                             {icon}
                         </span>
                     </div>)}
